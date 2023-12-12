@@ -1,0 +1,23 @@
+{
+    "name" : "Ad Blocker",
+    "description" : "Block unwanted Ads",
+    "version" : "0.0.1",
+ "manifest_version" : 3,
+"permissions": [
+    "declarativeNetRequest"
+], 
+"declarative_net_request" : {
+    "rule_resources":[
+        {
+            "id":"rulesset_1",
+            "enabled": true,
+            "path" :"rules.json" 
+        }
+    ]
+},
+ "action":{
+    "default_index":"index.html",
+    "default_icon":"icon.png"
+   
+ }
+}
